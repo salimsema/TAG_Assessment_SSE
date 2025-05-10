@@ -17,3 +17,11 @@ This repository contains the **ScriptRunner Groovy script** for Jira, along with
 - **Contents**:
     - **Task 1**: ScriptRunner implementation details, including steps taken to workflow transition to DONE when a user who is in the user group: jira-administrator transitions the ticket issue/work item into IN REVIEW.
     - **Task 2**: Analysis of an error from a custom endpoint, along with proposed solutions and error handling improvements.
+
+### 3. **ScriptRunner Groovy Script** (`task2.groovy`)
+- **Description**: This script defines a REST endpoint to retrieve the parent issue key of a given issue.
+- - **Usage**: External applications can call this REST endpoint to retrieve the parent issue key and utilize it within their systems.
+ 
+### 4. **Feedback document** (`Feedback_Salim.docx`)
+- **Description**: This document includes comments by Salim on the points highlighted by the TAG technical team.
+- **Contents**: It includes detailed comments by Salim on Task 1 and Task 2, which were overlooked during the interview.
