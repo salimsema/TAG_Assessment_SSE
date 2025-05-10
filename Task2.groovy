@@ -21,8 +21,8 @@ getParentIssueKeyUpdated(httpMethod: "GET", groups: ["adaptavist-users"]) {
         }
 		
         //Checking if issueKey provided in queryParams is valid or not
-		def issueManager = ComponentAccessor.getIssueManager()
-		def issue = issueManager.getIssueByCurrentKey(issueKey)
+	def issueManager = ComponentAccessor.getIssueManager()
+	def issue = issueManager.getIssueByCurrentKey(issueKey)
 
         //Throwing 404 with valid message if it is not valid
         if (!issue) {
@@ -30,7 +30,7 @@ getParentIssueKeyUpdated(httpMethod: "GET", groups: ["adaptavist-users"]) {
         }
 		
         //Fetching issue using issueKey
-		issue = Issues.getByKey(issueKey)
+	issue = Issues.getByKey(issueKey)
 
         //Accessing parent using issue. If no parent found than throwing 404 with valid message
         def parent = issue.getParentObject()
